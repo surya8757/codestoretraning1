@@ -1,0 +1,12 @@
+.table-1,.table-2,.table-3{
+    height:200px;
+    width:300px;
+}
+table, th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding-right:100px;
+}
+div{
+    margin-left: 400px;
+}
