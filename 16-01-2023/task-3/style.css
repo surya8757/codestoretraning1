@@ -1,0 +1,27 @@
+body {
+    margin:50px 0px; padding:0px;
+    text-align:center;
+    display: flex;
+}
+input{
+    border-radius: 4px;
+}
+div{
+    border:1px solid white;
+    background-color: azure;
+    display: block;
+    margin:100px 300px 400px 700px;
+    padding:15px;
+    box-shadow: 10px 10px 10px 10px rgb(83, 77, 78);
+}
+#sbmt{
+    background-color: rgb(190, 216, 233);
+    font-weight: 20px;
+    border-radius: 5px;
+    padding: 2px 30px 2px 30px;
+}
+textarea{
+    border:1px solid black;
+    display: flexbox;
+    border-radius: 5px;
+}
