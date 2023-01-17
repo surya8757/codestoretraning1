@@ -1,0 +1,20 @@
+//root -- is use in css in variable
+// :root{
+//     --primary-color:red;
+//     --secondary-color:blue;
+// }
+
+//map is used in css
+$font-weigth:(
+    "regular":400,
+    "medium":500,
+    "bold":5px
+);
+
+
+$primary-color:red;
+$secondary:blue;
+body{
+    background-color:$primary-color;
+    font-weight:map-get($font-weights,bold);
+}
