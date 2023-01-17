@@ -1,0 +1,27 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+header{
+    background-color: brown;
+    color:antiquewhite;
+    text-align: center;
+    height:40px;
+}
+
+
+
+.content{
+    display:flex;
+    justify-content: space-between;
+    /* max-width:50%; */
+}
+
+ .sub-content1{
+    margin-top:40px;
+    padding:50px;
+    box-shadow: powderblue 10px 15px 10px;
+}

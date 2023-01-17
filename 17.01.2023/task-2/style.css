@@ -1,0 +1,38 @@
+
+/*header section desing*/
+header{
+    margin:0px;
+    width:100%;
+    height:50px;
+    background-color:black;
+    color:blanchedalmond;
+    text-align: center;
+}
+
+/*content section design*/
+.content{
+    text-align: center;
+    width:100%;
+    height: 800px;
+    box-shadow: darkgray 10px 15px 12px;
+    background-color: powderblue;
+}
+
+/*group seclector of id tag of the element*/
+#sub-content, p, #hd2, h3  {
+    color:  darkred; /* color of p within w3r id and h1 h2 h3 should be darkred */
+    font-variant: small-caps; /*p within w3r id and h1 h2 h3 should be in small caps */
+    font-weight: 500;
+    } 
+
+/*footer section design*/
+
+footer{
+    background-color: black;
+    height:40px;
+    color:white;
+    text-align: center;
+}
+footer,h2{
+    color: azure;
+}
