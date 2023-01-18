@@ -1,0 +1,132 @@
+
+
+$primary-color:teal;
+$secondary-color:gray;
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-item-2 a{
+    padding-right:40px;
+}
+a i{
+    margin:5px;
+}
+a{
+    text-decoration: none;
+    color:teal;
+}
+a:hover{
+    color:rgb(71, 154, 225)
+}
+.container
+{
+    display:block;
+}
+.cont-item-1{
+    height:500px;
+    width:100%;
+    overflow: hidden;
+    background-color: aqua;
+    text-align: center;
+}
+.cont-item-2{
+    margin-top:15px;
+    height:500px;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(248, 195, 198);
+}
+.cont-item-3{
+    height:500px;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(201, 250, 214);
+}
+.cont-item-4{
+    margin:15px;
+    height:500px;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(173, 228, 149);
+}
+.cont-item-4 img{
+width:200px;
+height:auto;
+}
+.cont-item-5{
+    height:500px;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(216, 193, 243);
+}
+
+.container-form{
+    background-color: antiquewhite;
+    display: block;
+    margin:40px auto;
+    padding:100px;
+    border:1px solid black;
+    box-shadow:rgb(68, 61, 46) 10px 10px 10px;
+}
+input[type=text]
+{
+    border:none;
+    border-bottom: 1px solid black;
+    padding:20px auto;
+    outline: none;
+}
+
+
+
+input[type=text]:focus{
+    background-color: rgb(247, 239, 249);
+}
+/*input[type=text]::first-letter{
+}*/
+
+
+
+button{
+    margin-left: 30px;
+    padding:2px 40px 2px 40px;
+    border-radius: 5px;
+}
+button:link{
+    color:rgb(241, 231, 226);
+}
+button:visited{
+    color:rgb(202, 233, 202);
+}
+button:hover{
+    color:hotpink;
+}
+button:active{
+    color:blue;
+}
+
+
+footer{
+    padding:10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #594848;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}

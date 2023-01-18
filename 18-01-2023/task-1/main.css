@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+  /*display: flex;*/
+  height: 40px;
+  background-color: #333;
+}
+
+ul {
+  flex-direction: row;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  color: white;
+}
+
+li a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+li a:link {
+  color: rgb(241, 231, 226);
+}
+
+li a:visited {
+  color: rgb(202, 233, 202);
+}
+
+li a:hover {
+  color: hotpink;
+}
+
+li a:active {
+  color: blue;
+}
+
+/*container class design */
+.container {
+  display: flex;
+}
+
+.container-form {
+  background-color: antiquewhite;
+  display: block;
+  margin: 40px auto;
+  padding: 100px;
+  border: 1px solid black;
+  box-shadow: rgb(68, 61, 46) 10px 10px 10px;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 20px auto;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: rgb(247, 239, 249);
+}
+
+/*input[type=text]::first-letter{
+}*/
+button {
+  margin-left: 30px;
+  padding: 2px 40px 2px 40px;
+  border-radius: 5px;
+}
+
+button:link {
+  color: rgb(241, 231, 226);
+}
+
+button:visited {
+  color: rgb(202, 233, 202);
+}
+
+button:hover {
+  color: hotpink;
+}
+
+button:active {
+  color: blue;
+}/*# sourceMappingURL=main.css.map */
