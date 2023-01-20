@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  background-color: rgb(97, 113, 113);
+}
+
+ul li a {
+  color: white;
+}
+
+.nav-items-1 {
+  display: block;
+}
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item a:hover {
+  color: rgb(190, 249, 249);
+}
+
+.nav-items-1 a {
+  border: 1px solid rgb(248, 173, 108);
+  border-radius: 20px;
+  padding-top: 0px;
+}
+
+/*card design*/
+.container-item-cd img {
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */
