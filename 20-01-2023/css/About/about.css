@@ -1,0 +1,51 @@
+/*@import url(../main.css);*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+nav {
+  background-color: rgb(97, 113, 113);
+}
+
+ul li a {
+  color: white;
+}
+
+.nav-items-1 {
+  display: block;
+}
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item a:hover {
+  color: rgb(175, 243, 243);
+}
+
+.nav-items-1 a {
+  border: 1px solid rgb(248, 173, 108);
+  border-radius: 20px;
+  padding-top: 0px;
+}
+
+img {
+  width: 20em;
+  border-radius: 1000px;
+}
+
+footer {
+  background-color: rgb(246, 207, 135);
+  font-size: x-small;
+}/*# sourceMappingURL=about.css.map */

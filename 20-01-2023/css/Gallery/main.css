@@ -30,6 +30,13 @@ ul li a {
 }
 
 /*card design*/
-.container-item-cd img {
-  border-radius: 10px;
+.gallery-img {
+  height: 15rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+input[type=text] {
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */

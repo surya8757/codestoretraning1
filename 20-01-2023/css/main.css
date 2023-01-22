@@ -39,7 +39,67 @@ ul li a {
   padding-top: 0px;
 }
 
-.container {
-  justify-content: center;
-  /*text-align:center*/
-}/*# sourceMappingURL=main.css.map */
+section {
+  min-height: 100vh;
+  display: flex;
+}
+
+/*.container{
+    justify-content: center;
+    /*text-align:cente;
+}*/
+/*.home{
+   // position: relative;
+}*/
+#head-1 {
+  -webkit-animation-name: main;
+          animation-name: main;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes main {
+  0% {
+    color: rgb(241, 243, 239);
+  }
+  100% {
+    color: rgb(181, 3, 3);
+    /*font-size:98%;*/
+  }
+}
+
+@keyframes main {
+  0% {
+    color: rgb(241, 243, 239);
+  }
+  100% {
+    color: rgb(181, 3, 3);
+    /*font-size:98%;*/
+  }
+}
+.home-btn {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.home-btn:hover {
+  background-color: black;
+}
+
+.home-btn a:hover {
+  color: rgb(236, 218, 218);
+}
+
+/*@keyframes home-btn-ani{
+    0%{
+        background-color: orange;
+        color:$base_color;
+    }
+    100%{
+        background-color: black;
+        color:white;
+        /*font-size:98%;
+    }
+}*//*# sourceMappingURL=main.css.map */

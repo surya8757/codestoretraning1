@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-     <!--css link section-->
-     <link href="./css/SigIn/main.css" rel="stylesheet" type="text/css">
-     <!--fontawsome cdn-->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-     crossorigin="anonymous"
-     referrerpolicy="no-referrer"
-   />
-   <!--bootstrap cdn link-->
-   <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-     crossorigin="anonymous"
-   />
-</head>
-<!--body section-->
-<body>
-     <!--header section-->
-  <header>
-    <!--nav section-->
-    <nav class="row p-2">
+    <!--css link section-->
+    <link href="./css/SigIn/main.css" rel="stylesheet" type="text/css" />
+    <!--fontawsome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--bootstrap cdn link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!--body section-->
+  <body>
+    <!--header section-->
+    <header>
+      <!--nav section-->
+      <nav class="row p-2">
         <ul class="nav col-2">
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#"><b>Travel</b></a>
-            </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#"><b>Travel</b></a>
+          </li>
         </ul>
 
         <ul class="nav col-8 justify-content-center">
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="./Home.html"><i class="fa-solid fa-house"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Gallery.html"><b>Gallery</b></a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="./About.html"><b>About</b></a>
-            </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="./Home.html"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Gallery.html"><b>Gallery</b></a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="./About.html"><b>About</b></a>
+          </li>
         </ul>
 
         <ul class="nav col-2 justify-content-end">
-            <li class="nav-item nav-items-1">
-              <a class="nav-link" href="./sigIn.html"><b><i class="fa-regular fa-user px-2"></i>SigIn</b></a>
-            </li>
+          <li class="nav-item nav-items-1">
+            <a class="nav-link" href="./sigIn.html"
+              ><b><i class="fa-regular fa-user px-2"></i>SigIn</b></a
+            >
+          </li>
         </ul>
-    </nav>
-</header>
-<!--section-->
-<section >
-    <!--form section-->
-    <form action="/action_page" class="m-auto">
-        <div class="container">
-          <h1 style="text-align:center;">Sign In</h1>
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-          </label>
-          
-          <p>creating an account<a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-      
-          <div class="clearfix">
-            <button type="submit" class="signupbtn">Sign Ip</button>
+      </nav>
+    </header>
+    <!--section-->
+    <section>
+      <!--form section-->
+      <div class="auth m-3">
+        <form
+          action="/action_content"
+          method="$_post"
+          class="form-element m-atuo"
+        >
+          <span class="m-3 form-element-head"><b>logIn page</b></span>
+          <div class="form-element-1">
+            <lebel><b>Email</b></lebel>
+            <input type="text" placeholder="name@gmail.com" name="email" />
           </div>
-        </div>
-      </form>
-</section>
-
-
-
-</body>
+          <div class="form-element-2 m-3">
+            <lebel><b>password</b></lebel>
+            <input
+              type="password"
+              class=""
+              placeholder="password"
+              name="passw"
+            />
+          </div>
+          <div class="from-element-2 mt-3">
+            <span
+              >are you already have account?<a
+                href="#"
+                style="color: dodgerblue"
+                >Create account</a
+              >.</span
+            >
+          </div>
+          <div class="form-element-4 m-3">
+            <button type="submit" class="px-4 form-element-btn-4">
+              <a>submit</a>
+            </button>
+          </div>
+          <div class="form-element-5 mb-3">
+            <span><i class="fa-brands fa-google-plus"></i></span>
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-github"></i></span>
+            <span><i class="fa-brands fa-square-instagram"></i></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>

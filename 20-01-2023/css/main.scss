@@ -1,42 +1,94 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-$base_color:rgb(175, 243, 243);
-body{
-    width:100%;
-    object-fit: cover;
-    background-image: url(../images/slider-1.avif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100% 100%;
+$base_color: rgb(175, 243, 243);
+body {
+  width: 100%;
+  object-fit: cover;
+  background-image: url(../images/slider-1.avif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
-nav{
-    background-color: rgb(97,113,113);
+nav {
+  background-color: rgb(97, 113, 113);
 }
 
-ul{
-   li a{
-        color:white;
-    }
+ul {
+  li a {
+    color: white;
+  }
 }
 .nav-items-1 {
-    display: block;
+  display: block;
 }
-.nav-item a{
-    color:white;
-}
-
-.nav-item a:hover{
-    color:$base_color;
+.nav-item a {
+  color: white;
 }
 
-.nav-items-1 a{
-    border:1px solid rgb(248, 173, 108);
-    border-radius:20px;
-    padding-top:0px;
+.nav-item a:hover {
+  color: $base_color;
 }
-.container{
+
+.nav-items-1 a {
+  border: 1px solid rgb(248, 173, 108);
+  border-radius: 20px;
+  padding-top: 0px;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+}
+/*.container{
     justify-content: center;
-    /*text-align:center*/
+    /*text-align:cente;
+}*/
+/*.home{
+   // position: relative;
+}*/
+#head-1 {
+  //animation-name: main;
+  // animation-duration: 10sec;
+  //position: absolute;
+  //top: 50%;
+  // left:35%;
+  animation-name: main;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
+
+@keyframes main {
+  0% {
+    color: rgb(241, 243, 239);
+  }
+  100% {
+    color: rgb(181, 3, 3);
+    /*font-size:98%;*/
+  }
+}
+.home-btn {
+  background-color: orange;
+  border-radius: 10px;
+  // animation-name:home-btn-ani;
+  // animation-duration: 6s;
+  // animation-iteration-count: infinite;
+}
+.home-btn:hover {
+  background-color: black;
+}
+.home-btn a:hover {
+  color: rgb(236, 218, 218);
+}
+
+/*@keyframes home-btn-ani{
+    0%{
+        background-color: orange;
+        color:$base_color;
+    }
+    100%{
+        background-color: black;
+        color:white;
+        /*font-size:98%;
+    }
+}*/

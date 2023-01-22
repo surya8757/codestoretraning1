@@ -1,129 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
-     <!--css link section-->
-     <link href="./css/Gallery/main.css" rel="stylesheet" type="text/css">
-     <!--fontawsome cdn-->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-     crossorigin="anonymous"
-     referrerpolicy="no-referrer"
-   />
-   <!--bootstrap cdn link-->
-   <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-     crossorigin="anonymous"
-   />
-</head>
+    <!--css link section-->
+    <link href="./css/Gallery/main.css" rel="stylesheet" type="text/css" />
+    <!--fontawsome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--bootstrap cdn link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
   <!--header section-->
   <header>
     <!--nav section-->
     <nav class="row p-2">
-        <ul class="nav col-2">
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#"><b>Travel</b></a>
-            </li>
-        </ul>
+      <ul class="nav col-2">
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#"><b>Travel</b></a>
+        </li>
+      </ul>
 
-        <ul class="nav col-8 justify-content-center">
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="./Home.html"><i class="fa-solid fa-house"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Gallery.html"><b>Gallery</b></a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="./About.html"><b>About</b></a>
-            </li>
-        </ul>
+      <ul class="nav col-8 justify-content-center">
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="./Home.html"
+            ><i class="fa-solid fa-house"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Gallery.html"><b>Gallery</b></a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="./About.html"><b>About</b></a>
+        </li>
+      </ul>
 
-        <ul class="nav col-2 justify-content-end">
-            <li class="nav-item nav-items-1">
-              <a class="nav-link" href="./sigIn.html"><b><i class="fa-regular fa-user px-2"></i>SigIn</b></a>
-            </li>
-        </ul>
+      <ul class="nav col-2 justify-content-end">
+        <li class="nav-item nav-items-1">
+          <a class="nav-link" href="./sigIn.html"
+            ><b><i class="fa-regular fa-user px-2"></i>SigIn</b></a
+          >
+        </li>
+      </ul>
     </nav>
-</header>
-<!--section-->
-<section>
+  </header>
+  <!--section-->
+  <section>
     <!--section content-->
     <div class="container text-center">
-        <h1><b>Gallery</b></h1>
-        <div class="container-item-1 row g-5">
-
-            <div class="container-item-cd col-3">
-                <img src="./images/slider-1.avif" height="400px">
-                <div class="container-item-cd-1">
-                    <h5>image-1</h5>
-                </div>
+      <div class="container-item-1 row m-1">
+        <span class="container-item-head-inpt col-sm-4"
+          ><input type="text" placeholder="Search.." />
+          <a href="#"><i class="fa fa-search bg-light"></i></a
+        ></span>
+        <h1 class="container-item-head col-sm-8">Gallery</h1>
+      </div>
+      <div class="container-item-1 row g-5">
+        <div class="container-item-cd col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top gallery-img"
+              src="./images/slider-2.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><b>Nature</b></h5>
+              <p class="card-text">THis is natural beauty of Kerla</p>
             </div>
-
-            <div class="container-item-cd col-3">
-                <img src="./images/slider-2.avif" height="400px">
-                <div class="container-item-cd-1">
-                    <h5>image-2</h5>
-                </div>
-            </div>
-
-            
-            <div class="container-item-cd col-3">
-                <img src="./images/slider-9.avif" height="400px">
-                <div class="container-item-cd-1">
-                    <h5>image-3</h5>
-                </div>
-            </div>
-
-            <div class="container-item-cd col-3">
-                <img src="./images/slider-4.avif" height="400px">
-                <div class="container-item-cd-1">
-                    <h5>image-4</h5>
-                </div>
-            </div>
-
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Kerla</li>
+            </ul>
+          </div>
         </div>
-        <!--second card-->
 
-        <div class="container-item-1 row ">
-
-            <div class="container-item-cd col-3">
-                <img src="./images/slider-5.avif" height="400px">
-                <div class="container-item-cd-1">
-                    <h5>image-5</h5>
-                </div>
+        <div class="container-item-cd col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top gallery-img"
+              src="./images/slider-3.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <b>Beach</b>
+              </h5>
+              <p class="card-text">This is beauty of kerla Beach</p>
             </div>
-
-            <div class="container-item-cd col-3">
-                <img src="./images/slider-6.avif" height="400px">
-                <div class="container-item-cd-1">
-                    <h5>image-6</h5>
-                </div>
-            </div>
-
-            
-            <div class="container-item-cd col-3">
-                <img src="./images/slider-7.avif" height="400px">
-                <div class="container-item-cd-1">
-                    <h5>image-7</h5>
-                </div>
-            </div>
-
-            <div class="container-item-cd col-3">
-                <img src="./images/slider-8.avif" height="400px">
-                <div class="container-item-cd-1">
-                    <h5>image-8</h5>
-                </div>
-            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Kerla-beach</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="container-item-cd col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top gallery-img"
+              src="./images/slider-4.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Coconut</h5>
+              <p class="card-text">Coconut tree on the beach side</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Kerla-seaside</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-item-cd col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top gallery-img"
+              src="./images/slider-5.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">America</h5>
+              <p class="card-text">california beach side</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Lagon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--second card-->
+
+      <div class="container-item-1 row g-5 mt-1">
+        <div class="container-item-cd col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top gallery-img"
+              src="./images/slider-6.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><b>Lower-clip</b></h5>
+              <p class="card-text">A short clip capture in my mobile</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Clip</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-item-cd col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top gallery-img"
+              src="./images/slider-7.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Photos</h5>
+              <p class="card-text">A short clip is capture</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Shot-Clip</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-item-cd col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top gallery-img"
+              src="./images/slider-8.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><b>Girl</b></h5>
+              <p class="card-text">A side photos of the girl</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Clip</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-item-cd col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top gallery-img"
+              src="./images/slider-9.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><b>Playing</b></h5>
+              <p class="card-text">A short which is capture in beach</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Mumbai</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<body>
-</body>
+  </section>
+  <body></body>
 </html>
