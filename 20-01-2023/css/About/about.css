@@ -48,4 +48,12 @@ img {
 footer {
   background-color: rgb(246, 207, 135);
   font-size: x-small;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.about {
+  height: 100%;
+  position: relative;
 }/*# sourceMappingURL=about.css.map */
