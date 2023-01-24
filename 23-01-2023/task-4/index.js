@@ -43,3 +43,22 @@ let c=10;
 }
 //here c give 10
 console.log(c);
+function fun(value)
+{
+    var d=10;
+    if(value)
+    {
+        var d=30;
+        let f=40;
+        const g=50;
+        console.log(d);
+        console.log(f);
+        console.log(g);
+    }
+    //console.log(d); because var is function scopic
+    //console.log(f);//it give reference error;because it if block scopic(it means {block});
+    //console.log(g);//reference error g is not defined; it is also block scopic;
+
+}
+
+fun(true);

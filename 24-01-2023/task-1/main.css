@@ -1,0 +1,28 @@
+/* body{
+  text-align: center;
+} */
+
+.container{
+  text-align: center;
+  border:1px solid black;
+  width: 20%;
+  margin:100px auto;
+  height: 20rem;
+  padding:2rem;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+.form-1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+} 
+button{
+  width:10%;
+
+}
+.form-2{
+  margin:1rem;
+}
+
