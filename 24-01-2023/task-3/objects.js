@@ -63,3 +63,46 @@ prod:[
 
 console.log(obj1.student);
 console.log(obj1.prod[0].id);
+
+//direct object is not itrable
+// for(const keys of obj1[student])
+// {
+//     console.log(keys);
+// }
+
+const arr = ["a", , "c"];
+const sparseKeys = Object.keys(arr);
+const denseKeys = [...arr.keys()];
+console.log(sparseKeys); // ['0', '2']
+console.log(denseKeys); // [0, 1, 2]
+
+
+
+//entries always return iterator;it show the values in keys and values pair
+
+var array1 = ['a', 'b', 'c'];
+
+const iterator1 = array1.entries();
+
+console.log(iterator1.next().value);
+// Expected output: Array [0, "a"]
+
+console.log(iterator1.next().value);
+
+
+
+//reduce((accumulator, currentValue, currentIndex, array) => { /* … */ }, initialValue)
+
+console.log();
+var array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+console.log(sumWithInitial);
+// Expected output: 10
+

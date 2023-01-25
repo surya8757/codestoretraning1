@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <!--external css link-->
+    <link href="./main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-item si active">simple Interest</div>
+            <div class="menu-item ci">compund Interest</div>
+        </div>
+        <form class="form">
+            <div class="input-grp">
+                <lebel>Principal Amount<span class="required">*</span></lebel>
+                <input type="text" id="pa">
+            </div>
+            <div class="input-grp">
+                <lebel>Interest Rate (in %)<span class="required">*</span></lebel>
+                <input type="text" id="ir">
+            </div>
+            <div class="input-grp">
+                <lebel>Duration in year<span class="required">*</span></lebel>
+                <input type="text" id="du">
+            </div>
+            <div class="input-grp">
+                <lebel>Compunding frequency (in year)<span class="required">*</span></lebel>
+                <input type="text" id="ci-freq">
+            </div>
+        </form>
+        <div class="btn-wapper">
+        <buttton class="btn">Calculator</buttton>
+        </div>
+        <div class="result">
+            <strong>Total Amount</strong>
+            <span class="total-amount"></span>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

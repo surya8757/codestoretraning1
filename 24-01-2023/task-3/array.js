@@ -168,3 +168,31 @@ var arr8=arr7.map((value)=>{
     return value*10;
 })
 console.log(arr8);
+
+
+//for of loop
+
+var a=[1,2,3,4,5];
+for(const i of a)
+{
+  console.log(i);
+}
+
+console.log();
+//some method in array; it test weather one element pass the condition or not
+var arr1=[0,1,2,3,4];
+const even=(element)=>
+{
+  return element%2==0;
+} 
+console.log(arr1.some(even));
+var arr1=[0,10,2,6,4];
+const odd=(element)=>
+{
+  return element%2!=0;
+} 
+console.log(arr1.some(odd));
+
+//array.form create new array it has two arrgument element to form array second is operation that perform in array;
+
+console.log(Array.from(Array.of(1),x=>x+x));
