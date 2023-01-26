@@ -21,26 +21,30 @@
 <body>
     <!-- <h1>Javascript Error handaling</h1> -->
     <div class="container">
-        <h1>Javascript Error handaling</h1>
-        <form class="form-1">
-            <div class="from-2">
-              <label for="email">Email address</label>
-              <input type="email" id="Email1" aria-describedby="emailHelp">
-            </div>
-            <div class="form-2">
-              <label for="password">Password</label>
-              <input type="password" id="pass-1">
-            </div>
-            <div clas="form-2">
-              <input type="checkbox" id="Check1">
-              <label  for="Check1">Check me out</label>
-            </div>
-            <div class="btn-1">
-            <button type="submit" id="btn-1">Submit</button>
-            </div>
-          </form>
+      <form id="form">
+        <legend>Form</legend>
+        <div class="form-item">
+          <label>FirstName</label>
+          <input type="text" id="fname" autocomplete="off" placeholder="Enter name:-" name="fname-1">
+        </div>
+        <div class="form-item">
+          <label>LastName</label>
+          <input type="text" id="lname" autocomplete="off" placeholder="Enter lastname" name="lname-1">
+        </div>
+        <div class="form-item">
+          <label>Email</label>
+          <input type="text" id="email" autocomplete="off" placeholder="name@gmail.com" name="email-1">
+        </div>
+        <div class="form-item">
+          <label>Password</label>
+          <input type="number" id="passw" minlength="10" autocomplete="off" placeholder="Password" name="passw-1">
+        </div>
+        <div class="form-item">
+          <button type="submit" id="btn">submit</button>
+        </div>
+      </form>
     </div>
-    <script src="./index.js">
+    <script src="./formhand.js">
     </script>
 </body>
 </html>
