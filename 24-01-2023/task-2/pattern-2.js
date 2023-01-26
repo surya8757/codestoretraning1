@@ -1,4 +1,6 @@
-let n=5;
+//console print
+try{
+    let n=5;
  let str="";
 
 for(let i=1;i<=n;i++)
@@ -13,4 +15,12 @@ for(let i=1;i<=n;i++)
     }
     str+="\n";
 }
- console.log(str);
+ if(str.length==0)
+ {
+    throw new Error('something went wrong in code');
+ }
+}catch(err){
+    console.log(err);
+}finally{
+    console.log("i successfully print the patern");
+}

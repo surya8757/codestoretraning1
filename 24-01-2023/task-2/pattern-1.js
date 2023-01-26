@@ -1,4 +1,5 @@
-
+try{
+  
 let str="";
 for (let i = 0; i < 9; i++) {
  if (i == 0 || i == 8) {
@@ -22,4 +23,12 @@ for (let i = 0; i < 9; i++) {
    str+='\n';
  }
 }
- console.log(str);
+if(str.length==0)
+{
+  throw new Error("something went wrong in code");
+}
+}catch(err){
+  console.log(err);
+}finally{
+  console.log('successfully print the pattern');
+}

@@ -1,6 +1,9 @@
 const btn = document.getElementById("submt");
 const parent = document.getElementById("container-1");
 let str = "";
+
+
+//event listerner is call
 btn.addEventListener("click", function pattern() {
   for (let i = 0; i < 9; i++) {
     const element = document.createElement("p");
