@@ -18,17 +18,19 @@ body{
 .container{
     min-width: 400px;
     box-shadow:1px 1px 10px #ccc;
-    padding:15px;
+    padding:25px;
     border-radius: 15px;;
 }
 .menu{
     display: flex;
+    margin-bottom:1rem;
 }
 .menu-item{
     //background-color: red;
     flex-basis:50%;
     text-align: center;
     padding:10px;
+    border-radius: 15px;
     border:1px solid rgb(223,223,223);
     cursor: pointer;
     transition:all 0.1s ease-out;
@@ -56,9 +58,10 @@ body{
 }
 .input-grp input{
     //border: 1px solid red;
+    border-radius: 5px;
     min-height:30px;
     padding:5px;
-    border:1px solid rgb(223,223,223);
+    border:1px solid rgb(187, 182, 182);
 }
 .required{
     color:red;
