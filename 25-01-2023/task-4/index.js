@@ -58,7 +58,34 @@ const calculatorAmount=()=>{
         alert('all values must in number');
         location.reload();
         return;
+    
     }
+
+    //try catch error handling
+    try{
+        if(Pa<0 || Ir<0 || Du<0)
+        {
+            throw new Error("enter  positive number");
+        }
+    }catch(err)
+    {
+        if(Pa<0)
+        {
+            const p1=document.getElementById('pa-1');
+            p1.innerHTML=err;
+        }else if(Ir<0)
+        {
+            const p2=document.getElementById('ir-1');
+            p2.innerHTML=err; 
+        }else{
+            const p3=document.getElementById('du-1');
+            p3.innerHTML=err;
+        }
+        //console.log(err);
+        //location.reload();
+        //p1.innerHTML=err;
+        return;
+    };
 
     let result1=0;
 
@@ -70,7 +97,22 @@ const calculatorAmount=()=>{
 
     if(selectInterest==interestType.ci)
     {
-        const Fq=document.getElementById('freq').value;
+
+        
+        try{
+            const Fq=document.getElementById('freq').value;
+            if(Fq<=0)
+            {
+                throw new Error("enter positive number");
+            }
+        }catch(err)
+        {
+            const p4=document.getElementById('freq-1');
+            p4.innerHTML=err;
+            //console.log(err);
+            //location.reload();
+            return;
+        };
         result1=Pa*Math.pow((1+(Ir/Fq)),Fq*Du);
     }
     result.style.display='block';
