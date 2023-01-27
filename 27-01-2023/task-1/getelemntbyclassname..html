@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: beige;
+      }
+      div {
+        border: 1px solid black;
+        padding: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--body content-->
+    <h2>The getElementsByClassName() Method</h2>
+
+    <div id="myDIV">
+      <p class="child">I am a paragraph.</p>
+      <p class="child">I am a paragraph.</p>
+      <p class="child">I am a paragraph.</p>
+    </div>
+
+    <p>The number of elements with class "child" are:</p>
+    <p id="demo"></p>
+
+    <script>
+      const element = document.getElementById("myDIV");
+      element.addEventListener(
+        "mouseover",
+        () => (element.style.backgroundColor = "gray")
+      );
+      const nodes = element.getElementsByClassName("child");
+      //child length using getelementby class name
+      document.getElementById("demo").innerHTML = nodes.length;
+    </script>
+  </body>
+</html>

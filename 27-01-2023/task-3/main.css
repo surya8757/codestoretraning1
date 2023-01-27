@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    display: block;
+}
+
+img{
+    height: 400px;
+}
+button{
+    padding: 2px 30px;
+    border-radius: 10px;
+    margin-top:10px;
+}

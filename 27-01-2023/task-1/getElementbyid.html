@@ -1,0 +1,55 @@
+<!--doctype current use of version in html-->
+<!DOCTYPE html>
+<!--html body tag-->
+<html lang="en">
+  <!--head section in html-->
+  <head>
+    <!--head content-->
+    <meta charset="UTF-8" />
+    <!--browser compatiblity-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--body view description-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title in html-->
+    <title>Document</title>
+    <style>
+      body{
+        background-color: gray;
+      }
+      .container-item
+      {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <!--body section in html-->
+  <body>
+    <div class="container">
+      <div class="container-item">
+        <h1>getElementById</h1>
+        <p id="para">
+          <b>All descendants of the specified element are searched, but not the<br>
+          element itself. The returned list is live, which means it updates<br>
+          itself with the DOM tree automatically. Therefore, there is no need to<br>
+          call Element.getElementsByTagName() with the same element and<br>
+          arguments repeatedly if the DOM changes in between calls.</b>
+        </p>
+        <button onclick="changeColor('blue');">blue</button>
+        <button onclick="changeColor('red');">red</button>
+      </div>
+      
+    </div>
+    <script>
+      let p1=document.getElementById('para');
+      function changeColor(a)
+      {
+        if(a=='blue')
+        {
+          p1.style.color="blue";
+        }else if(a=='red'){
+          p1.style.color="red";
+        }
+      }
+    </script>
+  </body>
+</html>
