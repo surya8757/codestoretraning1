@@ -1,65 +1,73 @@
-let arr=['patna','lucknow','delhi','kolkata','bombay','chenni','noida'];
+let arr=['Patna','Lucknow','Delhi','Kolkata','Bombay','Chenni','Noida'];
+let AddBtn=document.getElementById('TravelBtn');
 
-//local dataparse
-let localData = JSON.parse(localStorage.getItem("table"));
-let tableData = !localData || localData.length <=0 ? []: localData;
+let LocalData=JSON.parse(localStorage.getItem('Table'));
+let TableData=!LocalData || LocalData.length<=0 ?[]:LocalData;
+// let Tbody=document.getElementById('TableBody');
+// //window.showData(Tbody,LocalData);
 
-//when window is load
-window.addEventListener("load", (e) =>{
-     let sourcelist=document.getElementById('source-list');
-     let destinationlist=document.getElementById('destination-list');
-     loadOptions(sourcelist, arr);
-     loadOptions(destinationlist, arr);
+
+//load element dynamically;
+let SourceList=document.getElementById('SourceListId');
+let DestinationList=document.getElementById('DestinationListId');
+
+window.addEventListener("load",()=>{
+   loadFunction(SourceList,arr);
+   loadFunction(DestinationList,arr);
 })
-
-//map the element crossponding to table data;
-function loadOptions(ele, arr){
-    ele.innerHTML = arr.map(item => {
-        return  `<option value="${item}">${item}</option> `
-   });
-}
-
-//event is perform when click on btn;
-let btn=document.getElementById('btn');
-btn.addEventListener('click',(e)=>
+function OnChange()
 {
-    e.preventDefault();
-    let source=document.getElementById('source-list');
-    let destination=document.getElementById('destination-list');
-    tableData.push({
-        source: source.value,
-        destination : destination.value
-    })
-
-    //store the data in string formate in locastorage
-    localStorage.setItem("table", JSON.stringify(tableData));
-    showTableData(tableData);
-    let sourceList = [];
-    let destinationList= [];
-    tableData.map(item => sourceList.push(item.source))
-    tableData.map(item => destinationList.push(item.destination))
-    let sourcelist=document.getElementById('source-list');
-    let destinationlist=document.getElementById('destination-list');
-    loadOptions(sourcelist, filterOptions(sourceList));
-    loadOptions(destinationList, filterOptions(destinationlist));
-})
-
-
-//show tabletable data
-function showTableData(data) {
-     let tableBody = document.getElementById("tbody1");
-     tableBody.innerHTML = data.map(item => {
-         return ` <tr>
-         <td>${item.source}</td>
-         <td>${item.destination}</td>
-     </tr>`
-     })
+   loadFunction(DestinationList,FillterFunction(SourceList.value));
+}
+function loadFunction(ele,data)
+{
+   ele.innerHTML=data?.map((item)=>{
+      return  `<option value="${item}">${item}</option>`
+   })
 }
 
-//filter table data
-function filterOptions(data){
-    let filteredData = arr.filter( function(item) {
-         return data.includes(item) !== true;
+//on add btn click
+AddBtn.addEventListener('click',(e)=>{
+   e.preventDefault();
+   let SourceList=document.getElementById('SourceListId');
+   let DestinationList=document.getElementById('DestinationListId');
+   if(!SourceList.value || !DestinationList.value)
+   {
+      return;
+   }
+   TableData.push({
+      Source:SourceList.value,
+      Destination:DestinationList.value
+   });
+   let SourceArr=TableData.map((item)=>{
+      return item.Source;
+   })
+   let DestinationArr=TableData.map((item)=>{
+      return item.Source;
+   })
+   //save data on localstroage
+   localStorage.setItem('Table',JSON.stringify(TableData));
+   let Tbody=document.getElementById('TableBody');
+   showData(Tbody,TableData);
+   loadFunction(SourceList,FillterFunction(SourceArr));
+   loadFunction(DestinationList,FillterFunction(DestinationArr));
+})
+
+//showDataFunction
+function showData(ele,data)
+{
+   ele.innerHTML=data?.map((item)=>{
+   return `<tr>
+   <td>${item.Source}</td>
+   <td>${item.Destination}</td>
+   </tr>`
+}).join("");
+}
+
+function FillterFunction(data)
+{
+    let functionArr=arr.filter((item)=>{
+      return data.includes(item)!==true;
     })
-    return filteredData;
+    return functionArr;
 }

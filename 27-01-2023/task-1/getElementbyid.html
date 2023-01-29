@@ -1,55 +1,48 @@
-<!--doctype current use of version in html-->
 <!DOCTYPE html>
-<!--html body tag-->
 <html lang="en">
-  <!--head section in html-->
   <head>
-    <!--head content-->
     <meta charset="UTF-8" />
-    <!--browser compatiblity-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--body view description-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--title in html-->
-    <title>Document</title>
+    <title>getElementById</title>
     <style>
-      body{
-        background-color: gray;
-      }
-      .container-item
-      {
+      #main-item-1 {
         text-align: center;
+        height: 400px;
+        border: 1px solid black;
       }
     </style>
   </head>
-  <!--body section in html-->
   <body>
-    <div class="container">
-      <div class="container-item">
-        <h1>getElementById</h1>
-        <p id="para">
-          <b>All descendants of the specified element are searched, but not the<br>
-          element itself. The returned list is live, which means it updates<br>
-          itself with the DOM tree automatically. Therefore, there is no need to<br>
-          call Element.getElementsByTagName() with the same element and<br>
-          arguments repeatedly if the DOM changes in between calls.</b>
+    <div id="main">
+      <div id="main-item-1">
+        <h1 id="main-head">Headingsection</h1>
+        <p id="main-parag">
+          The getElementById() method returns the elements that have given an ID<br>
+          which is passed to the function. This function is a widely used HTML<br>
+          DOM method in web designing to change the value of any particular<br>
+          element or get a particular element. If the passed ID to the function<br>
+          does not exist then it returns null. The element is required to have a<br>
+          unique id, in order to get access to that specific element quickly, &<br>
+          also that particular id should only be used once in the entire
+          document.
         </p>
-        <button onclick="changeColor('blue');">blue</button>
-        <button onclick="changeColor('red');">red</button>
+        <button type="button" id="btn" style="background-color:aqua">onClick</button>
       </div>
-      
     </div>
     <script>
-      let p1=document.getElementById('para');
-      function changeColor(a)
+      let mainItem = document.getElementById("main-item-1");
+      let btn=document.getElementById('btn');
+      let mainHead=document.getElementById('main-head');
+      let mainParag=document.getElementById('main-parag');
+      btn.addEventListener('click',(e)=>
       {
-        if(a=='blue')
-        {
-          p1.style.color="blue";
-        }else if(a=='red'){
-          p1.style.color="red";
-        }
-      }
+        e.preventDefault();
+        console.log(e);
+        mainItem.style.backgroundColor="gray";
+        mainHead.style.color="blue";
+        mainParag.style.color="red";
+      })
     </script>
   </body>
 </html>

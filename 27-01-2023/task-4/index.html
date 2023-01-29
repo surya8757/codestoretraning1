@@ -1,54 +1,58 @@
-<!--version of use html-->
 <!DOCTYPE html>
-<!--html body tag-->
 <html lang="en">
-<!--html header section-->
-<head>
-    <!--head body-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./index.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <!--body content-->
-    <div class="main-container">
-    <div class="container">
-        <div class="container-item">
-            <label for="source"><b>Source:</b></label>
-            <select name="source" id="source-list">
-             
-            </select>
-           
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeShuduler</title>
+    <!--css link-->
+    <link href="./main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-item-1">
+        <div class="Travel">
+          <label id="TravelHead">Traveling</label>
+          <div class="TravelSection">
+            <div class="TravelSource">
+              <label id="TravelSourceId">Source:</label>
+              <select name="SourceList" id="SourceListId" onchange="OnChange()">
+                <!-- <option value="firefox">Firefox</option>
+                     <option value="ie">IE</option>
+                     <option value="chrome">Chrome</option>
+                     <option value="opera">Opera</option>
+                     <option value="safari">Safari</option> -->
+              </select>
+            </div>
+            <div id="To">To</div>
+            <div class="TravelDestination">
+              <label id="TravelDestination">Destination:</label>
+              <select name="DestinationList" id="DestinationListId">
+                <!-- <option value="firefox">Firefox</option>
+                     <option value="ie">IE</option>
+                     <option value="chrome">Chrome</option>
+                     <option value="opera">Opera</option>
+                     <option value="safari">Safari</option> -->
+              </select>
+            </div>
+          </div>
+          <button type="submit" id="TravelBtn">Add</button>
         </div>
-        <div class="container-item">
-            <label for="destination"><b>Destination:</b></label>
-            <select name="destination" id="destination-list">
-              
-            </select>
-        </div>
-        <div class="container-item">
-            <button type="submit" id="btn">add</button>
-        </div>
-    </div>
-    <div class="container-2">
-        <div class="container-item-2">
-        <table id="tb-1" style="text-align:center">
-            <tr>
-                <th>Source</th>
-                <th>Destination</th>
-            </tr>
-            <tbody id="tbody1">
-                <tr>
-                </tr>
+      </div>
+      <div class="main-item-2">
+        <div class="main-item-3">
+          <label id="TravelListId">TravelList</label>
+          <table class="TableList">
+            <tr><th>Source</th><th>Destination</th></tr>
+            <tbody id="TableBody">
             </tbody>
-        </table>
+          </table>
         </div>
+      </div>
     </div>
-</div>
-<!--javascript link-->
-    <script src="./index.js"></script>
-</body>
+    <!--javascript link-->
+    <script src="./index.js">
+
+    </script>
+  </body>
 </html>
