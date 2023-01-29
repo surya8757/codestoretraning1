@@ -12,8 +12,8 @@
 
 /*subitem design*/
 .main-item-1 {
-  height: 40%;
   width: 100%;
+  max-height: 419px;
   /* border: 1px solid black; */
 }
 
@@ -73,8 +73,8 @@
 .main-item-2 {
   width: 50%;
   border: 1px solid rgb(53, 49, 49);
-  margin: 0px auto;
-  min-height: 300px;
+  margin: 30px auto;
+  min-height: 200px;
   overflow: hidden;
 }
 .main-item-3 {
@@ -106,4 +106,13 @@ tr:nth-child(even) {
   margin-bottom: 2px;
   font-size: large;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media (max-width:845px){
+  .TravelSection{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
 }
